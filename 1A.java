@@ -1,32 +1,29 @@
 import java.util.*;
 
 public class 1A {
-	public static void main(String[] args) {
-	    
+	public static void main(String[] args) {  
 	    Scanner S1 = new Scanner(System.in);
-	    
 		while (true) {
 			ArrayList<Integer> at = new ArrayList<Integer>();
 			ArrayList<Integer> df = new ArrayList<Integer>();
 			int A;
 			int D;
-
-			 
             A = S1.nextInt();
             D = S1.nextInt(); 
 
 			if (A == 0 && D == 0) {
 				break;
 			}
+
 			if (A > 0 && D < 2 ) {
 				System.out.print("N");
 				System.out.print("\n");
 				continue;
 			}
-
 			int distA;
-			//Scanner S3 = new Scanner(System.in); 
-            for (int i = 0; i < A; i++) {
+
+
+			for (int i = 0; i < A; i++) {
 			    distA = S1.nextInt();
                 at.add(distA);
             }
