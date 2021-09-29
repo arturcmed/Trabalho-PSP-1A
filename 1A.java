@@ -2,13 +2,16 @@ import java.util.*;
 
 public class 1A {
 	public static void main(String[] args) {
+	    
+	    Scanner S1 = new Scanner(System.in);
+	    
 		while (true) {
 			ArrayList<Integer> at = new ArrayList<Integer>();
 			ArrayList<Integer> df = new ArrayList<Integer>();
 			int A;
 			int D;
 
-			Scanner S1 = new Scanner(System.in); 
+			 
             A = S1.nextInt();
             D = S1.nextInt(); 
 
@@ -22,16 +25,16 @@ public class 1A {
 			}
 
 			int distA;
-			Scanner S3 = new Scanner(System.in); 
+			//Scanner S3 = new Scanner(System.in); 
             for (int i = 0; i < A; i++) {
-			    distA = S3.nextInt();
+			    distA = S1.nextInt();
                 at.add(distA);
             }
             
             int distD;
-			Scanner S4 = new Scanner(System.in); 
+			//Scanner S4 = new Scanner(System.in); 
 			for (int i = 0; i < D; i++) {
-				distD = S4.nextInt();
+				distD = S1.nextInt();
 				df.add(distD);
 			}
 
